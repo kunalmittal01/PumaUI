@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PUMA.COM | Forever Faster</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link rel="icon" href="data:image/png;base64,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">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="offer offer-stripe">
+        <p id="offerdisp">FREE RETURNS AND FREE EXCHANGE.</p>
+    </div>
+    <nav>
+        <div class="nav-wrap-large">
+            <div class="nav-items">
+                <div class="logo">
+                    <img src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQ7LuQkwenZcaU5fiFo2XDrJ0exaW_V2eRSVXhVNIWkJTNCFFXm" alt="">
+                </div>
+                <p>New</p>
+                <p>Women</p>
+                <p>Men</p>
+                <p>Kids</p>
+                <p>Motorsport</p>
+                <p>Collaborations</p>
+                <p>Sports</p>
+                <p>Sale</p>
+                <p>Palermo</p>
+            </div>
+            <div class="nav-wrap">
+                <div class="nav-search">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <p>Search</p>
+                </div>
+                <i class="fa-regular fa-heart"></i>
+                <i class="fa-solid fa-cart-shopping"></i>
+                <i class="fa-regular fa-user"></i>
+            </div>
+        </div>
+        <div class="nav-warp-small">
+            <div class="nav-menu">
+                <i class="fa-solid fa-bars"></i>
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </div>
+            <div class="logo">
+                <img src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQ7LuQkwenZcaU5fiFo2XDrJ0exaW_V2eRSVXhVNIWkJTNCFFXm" alt="">
+            </div>
+            <div class="nav-options">
+                <i class="fa-solid fa-cart-shopping"></i>
+                <i class="fa-regular fa-user"></i>
+            </div>
+        </div>
+    </nav>
+    <div class="offer-stripe">
+        <p>EXTRA 15% OFF ON ORDERS ABOVE ₹3999*</p>
+        <p><span>FOR HIM</span><span>FOR HER</span><span>FOR KIDS</span></p>
+        <p><span>Auto-applied at checkout</span>|<span>*Exclusions apply</span></p>
+    </div>
+    <div class="new-arrival">
+        <div class="arrival-wrap">
+            <p>NEW ARRIVALS</p>
+            <p>WORN BY VIRAT KOHLI</p>
+            <div class="arrival-btns">
+                <button>SHOP NOW</button>
+                <button>CURATED LOOKS</button>
+            </div>
+        </div>
+    </div>
+    <div class="arrival-small">
+        <div class="arrival-small-wrap">
+            <p>NEW ARRIVALS</p>
+            <p>WORN BY VIRAT KOHLI</p>
+            <div class="arrival-btns">
+                <button>SHOP NOW</button>
+                <button>CURATED LOOKS</button>
+            </div>
+        </div>
+    </div>
+    <div class="lowest-price">
+        <p>LOWEST PRICE OF THE YEAR</p>
+        <P>IT'S A NOW OR NEVER KINDA DEAL</P>
+        <button>SHOP NOW</button>
+    </div>
+    <div class="palermo">
+        <div class="palermo-wrap">
+            <div class="palermo-cont">
+                <p>PALERMO</p>
+                <P>REWRITE THE CLASSICS</P>
+                <div class="palermo-btn">
+                    <button>SHOP NOW</button>
+                    <button>EXPLORE STYLE GUIDE</button>
+                </div>
+            </div>
+            <div class="palermo-img">
+                <img src="https://images.puma.com/image/upload/c_scale,f_auto,q_auto:good,w_1920/cms/images/45adb00438bd290f62f1146b0792436e60087fe4?_a=BAMCkGfi0" alt="">
+            </div> 
+        </div>
+        <div class="palermo-video">
+            <video autoplay loop>
+                <source src="https://cdn.sanity.io/files/qa41whrn/prod/2269b9809fbb0cc903469eabd884b3de0ac70c80.mp4" type="video/mp4" data-test-id="video-source">
+            </video>
+        </div>
+    </div>
+    <div class="playbook">
+        <div class="playbook-cont">
+            <p>PALERMO PLAYBOOK</p>
+            <p>Style 'em your way, every day</p>
+        </div>
+        <div class="playbook-cards">
+            <div class="playbook-card">
+                <img src="https://images.puma.com/image/upload/c_scale,f_auto,q_auto:good,w_2083/cms/images/a0baeb671b2d2521b0fb92aced51edbc451c5718?_a=BAMAH2fi0" alt="">
+                <p>STREETWEAR STAPLE</p>
+                <button>SHOP NOW</button>
+            </div>
+            <div class="playbook-card">
+                <img src="https://images.puma.com/image/upload/c_scale,f_auto,q_auto:good,w_2083/cms/images/faa9d6bbc65cf26709372d27ce9ba2884708c84b?_a=BAMAH2fi0" alt="">
+                <p>NIGHT-OUT LOOK</p>
+                <button>SHOP NOW</button>
+            </div>
+            <div class="playbook-card">
+                <img src="https://images.puma.com/image/upload/c_scale,f_auto,q_auto:good,w_2083/cms/images/8adef940f580b6559e730b05954bbedfb1491822?_a=BAMAH2fi0" alt="">
+                <p>PLAYFUL OUTINGS</p>
+                <button>SHOP NOW</button>
+            </div>
+            <div class="playbook-card">
+                <img src="https://images.puma.com/image/upload/c_scale,f_auto,q_auto:good,w_2083/cms/images/ef2d5db96e29d8ad45056fb19c0ce3aedd545d56?_a=BAMAH2fi0" alt="">
+                <p>THE FESTIVE EDIT</p>
+                <button>SHOP NOW</button>
+            </div>
+        </div>
+    </div>
+    <div class="collections">
+        <div class="fenty">
+            <div class="fenty-cont">
+                <p>FENTY x PUMA</p>
+                <P>THE AVANTI BY RIHANNA</P>
+                <button>SHOP NOW</button>
+            </div>
+        </div>
+        <div class="fenty-small">
+            <p>FENTY x PUMA</p>
+            <P>THE AVANTI BY RIHANNA</P>
+            <button>SHOP NOW</button>
+        </div>
+        <div class="fenty asaprocky">
+            <div class="fenty-cont">
+                <p>A$AP ROCKY x PUMA</p>
+                <P>DROPPING NOVEMBER 7TH</P>
+                <button>EXPLORE COLLECTION</button>
+                <button>SIGN UP NOW</button>
+            </div>
+        </div>
+        <div class="fenty-small">
+            <p>A$AP ROCKY x PUMA</p>
+            <P>DROPPING NOVEMBER 7TH</P>
+            <div class="asap-btn">
+                <button>EXPLORE COLLECTION</button>
+                <button>SIGN UP NOW</button>
+            </div>
+        </div>
+    </div>
+    <div class="collections2">
+        <div class="collect-card collectone">
+            <p>MB.04 1LOVE</p>
+        </div>
+        <div class="collect-card collecttwo">
+            <p>DEVIATE 3</p>
+            <p>MARATHON SERIES</p>
+        </div>
+        <div class="collect-card collectthree">
+            <p>SOFTRIDE</p>
+        </div>
+        <div class="collect-card collectfour">
+            <p>LIGHTS OUT PACK</p>
+        </div>
+    </div>
+    <div class="highlights">
+        <p>HIGHLIGHTS</p>
+        <div class="playbook-cards">
+            <div class="playbook-card">
+                <img src="https://images.puma.com/image/upload/c_scale,f_auto,q_auto:good,w_985/cms/images/3e1c0c46b05ee435b4c9c62edfcb05d1e0354c35?_a=BAMCkGfi0" alt="">
+                <p>PUMA SPEEDCAT</p>
+                <button>SHOP NOW</button>
+            </div>
+            <div class="playbook-card">
+                <img src="https://images.puma.com/image/upload/c_scale,f_auto,q_auto:good,w_2083/cms/images/778bd977f339b8f3131ea841cb8aa3a64d42f843?_a=BAMCkGfi0" alt="">
+                <p>WINTERWEAR</p>
+                <button>SHOP NOW</button>
+            </div>
+            <div class="playbook-card">
+                <img src="https://images.puma.com/image/upload/c_scale,f_auto,q_auto:good,w_2083/cms/images/3b5200bdc44bb743647a0c3e844c5b6d4e1cb322?_a=BAMCkGfi0" alt="">
+                <p>PUMA X LMC</p>
+                <button>SHOP NOW</button>
+            </div>
+            <div class="playbook-card">
+                <img src="https://images.puma.com/image/upload/c_scale,f_auto,q_auto:good,w_2083/cms/images/ec207a61f3354932669ae8bdbea08136658ad48d?_a=BAMCkGfi0" alt="">
+                <p>THE SCRIBBLE PACK</p>
+                <button>SHOP NOW</button>
+            </div>
+        </div>
+    </div>
+    <div class="puma-one">
+        <div class="fenty">
+            <div class="fenty-cont">
+                <p>PUMA x one8</p>
+                <p>EFFORTLESS STYLE</p>
+                <button>SHOP NOW</button>
+            </div>
+        </div>
+        <div class="fenty-small">
+            <p>PUMA x one8</p>
+            <p>EFFORTLESS STYLE</p>
+            <button>SHOP NOW</button>
+        </div>
+    </div>
+    <div class="new-season">
+        <p class="seasonhead">NEW SEASON. NEW THREADS.</p>
+        <div class="season-cards">
+            <div class="season-card season1">
+                <p>HARAYANA STEELERS</p>
+                <p>HOME JERSEY</p>
+            </div>
+            <div class="season-card season2">
+                <p>HARAYANA STEELERS</p>
+                <p>AWAY JERSEY</p>
+            </div>
+            <div class="season-card season3">
+                <p>MUMBAI CITY FC HOME KIT</p>
+            </div>
+            <div class="season-card season4">
+                <p>BENGLURU FC AWAY KIT</p>
+            </div>
+        </div>
+    </div>
+    <div class="mmq">
+        <div class="fenty">
+            <div class="fenty-cont">
+                <p>MMQ SPORT</p>
+                <p>SPORT SOPHISTICATION</p>
+                <button>SHOP NOW</button>
+            </div>
+        </div>
+        <div class="fenty-small">
+            <p>MMQ SPORT</p>
+            <p>SPORT SOPHISTICATION</p>
+            <button>SHOP NOW</button>
+        </div>
+    </div>
+    <div class="recommended">
+        <p class="recommendedhead">RECOMMENDED FOR YOU</p>
+        <div class="recommend-cards">
+            <div class="recommend-card">
+                <img src="https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_450,h_450/global/399844/01/sv01/fnd/IND/fmt/png/PUMA-Court-Shatter-Low-Unisex-Sneakers" alt="">
+                <p class="discount">-50%</p>
+                <p class="recomhead">PUMA Court Shatter Low Unisex Sneakers</p>
+                <p class="price">₹2,999</p>
+                <p class="pricecut">₹5,999</p>
+            </div>
+            <div class="recommend-card">
+                <img src="https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_450,h_450/global/380736/01/sv01/fnd/IND/fmt/png/Graviton-Pro-Unisex-Sneakers" alt="">
+                <p class="discount">-50%</p>
+                <p class="recomhead">Graviton Pro Unisex Sneakers</p>
+                <p class="price">₹3,499</p>
+                <p class="pricecut">₹6,999</p>
+            </div>
+            <div class="recommend-card">
+                <img src="https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_450,h_450/global/310093/02/sv01/fnd/IND/fmt/png/FlexFocus-Lite-Modern-Unisex-Running-Shoes" alt="">
+                <p class="discount">-52%</p>
+                <p class="recomhead">FlexFocus Lite Modern Unisex Running Shoes</p>
+                <p class="price">₹2,639</p>
+                <p class="pricecut">₹5,499</p>
+            </div>
+            <div class="recommend-card">
+                <img src="https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_450,h_450/global/396464/01/sv01/fnd/IND/fmt/png/Palermo-Lth-Unisex-Sneakers" alt="">
+                <p class="recomhead">Palermo Lth  Unisex Sneakers</p>
+                <p class="price">₹6,999</p>
+            </div>
+            <div class="recommend-card">
+                <img src="https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_450,h_450/global/379437/14/sv01/fnd/IND/fmt/png/Skyrocket-Lite-Unisex-Running-Shoes" alt="">
+                <p class="recomhead">Skyrocket Lite Unisex Running Shoes</p>
+                <p class="price">₹4,999</p>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="footer-large">
+            <div class="support">
+                <h3>SUPPORT</h3>
+                <div class="foot-list">
+                    <p>Contact US</p>
+                    <p>Promotions & Sale</p>
+                    <p>Track Order</p>
+                    <p>Shoe Care</p>
+                    <p>Tech Glossary</p>
+                    <p>Initiate Return / Exchange</p>
+                    <p>Cookie Settings</p>
+                </div>
+            </div>
+            <div class="faq">
+                <div class="foot-list">
+                    <p>FAQs</p>
+                    <p>My Account</p>
+                    <p>Exchange & Return Policy</p>
+                    <p>Privacy Policy</p>
+                    <p>Terms & Conditions</p>
+                    <p>Sneakers</p>
+                </div>
+            </div>
+            <div class="about">
+                <h3>About</h3>
+                <div class="foot-list">
+                    <p>Company</p>
+                    <p>Corporate News</p>
+                    <p>Press Center</p>
+                    <p>Investers</p>
+                    <p>Sustainability</p>
+                    <p>Careers</p>
+                    <p>Store Locator</p>
+                    <p>PUMA Articles</p>
+                </div>
+            </div>
+            <div class="start">
+                <h3>Stay up to date</h3>
+                <div class="foot-links">
+                    <i class="fa-brands fa-youtube"></i>
+                    <i class="fa-brands fa-x-twitter"></i>
+                    <i class="fa-brands fa-pinterest"></i>
+                    <i class="fa-brands fa-instagram"></i>
+                    <i class="fa-brands fa-facebook"></i>
+                </div>
+                <div class="explore">
+                    <h3>Explore</h3>
+                    <div class="exp-wrap">
+                        <div class="exp">
+                            <img src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQ7LuQkwenZcaU5fiFo2XDrJ0exaW_V2eRSVXhVNIWkJTNCFFXm" alt="">
+                           <p>APP</p>
+                        </div>
+                        <div class="exp">
+                            <img src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQ7LuQkwenZcaU5fiFo2XDrJ0exaW_V2eRSVXhVNIWkJTNCFFXm" alt="">
+                            <p>TRAC</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-small">
+            <div class="fsm-item">
+                <p>SUPPORT</p>
+                <p>⌄</p>
+            </div>
+            <div class="fsm-item">
+                <p>ABOUT</p>
+                <p>⌄</p>
+            </div>
+            <div class="fsm-item">
+                <p>STAY UP TO DATE</p>
+                <p>⌄</p>
+            </div>
+            <div class="fsm-item">
+                <p>EXPLORE</p>
+                <p>⌄</p>
+            </div>
+        </div>
+        <div class="india-small">
+            <img src="data:image/png;base64,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" alt="">
+            <p>India</p>
+        </div>
+        <div class="divider"></div>
+        <div class="foot-bottom">
+            <div class="india">
+                <img src="data:image/png;base64,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" alt="">
+                <p>India</p>
+            </div>
+            <div class="copyright">
+                <p>© PUMA India Ltd, 2024. All Rights Reserved.</p>
+                <p class="imp">Imprint and Legal Data</p>
+            </div>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

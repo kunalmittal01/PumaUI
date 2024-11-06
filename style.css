@@ -1,0 +1,967 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.offer  {
+    background-color: white !important;
+    color: black !important;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem 1.5rem;
+    color: white;
+    background-color: black;
+    font-size: 14px;
+    z-index: 2;
+    top: 0;
+    width: 100%;
+}
+
+.nav-wrap-large {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+ button {
+    border: none;
+    cursor: pointer;
+ }
+
+nav .logo img {
+    cursor: pointer;
+    width: 40px;
+}
+
+.nav-wrap-large .nav-items {
+    display: flex;
+    align-items: center;
+    gap: 1.2rem;
+}
+
+.nav-wrap-large .nav-items p:hover {
+    cursor: pointer;
+    text-decoration: underline;
+    text-decoration-color: rgba(206, 206, 12, 0.815);
+    text-underline-offset: 8px;
+    color: gray;
+}
+
+.nav-wrap-large .nav-wrap {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+nav .nav-wrap .nav-search {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    border: 1px solid gray;
+    padding: 0.5rem;
+    margin-right: 15px;
+    cursor: pointer;
+}
+
+nav .nav-wrap i:not(.fa-magnifying-glass) {
+    padding: 10px;
+    border-radius: 50px;
+}
+
+nav .nav-wrap i:hover {
+    cursor: pointer;
+    background-color: rgba(128, 128, 128, 0.466);
+}
+
+nav .nav-wrap .nav-search:hover {
+    border: 1px solid white;
+}
+
+.nav-warp-small {
+    display: none;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.nav-menu i, .nav-options i {
+    padding: 10px;
+    border-radius: 50px;
+}
+
+.nav-menu i:hover, .nav-options i:hover {
+    cursor: pointer;
+    background-color: rgba(128, 128, 128, 0.466);
+}
+
+.nav-menu {
+    display: flex;
+    align-items: center;
+}
+
+.nav-options {
+    display: flex;
+    align-items: center;
+}
+
+@media screen and (max-width: 968px) {
+    nav .nav-wrap-large {
+        display: none;
+    }
+
+    .nav-warp-small {
+        display: flex;
+    }
+}
+
+.offer-stripe {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap:5px;
+    justify-content: center;
+    padding: 1rem 0;
+    background-color: #414584;
+    color: white;
+    font-size: 14px;
+}
+
+.offer-stripe p:first-child {
+    font-weight: bold;
+}
+
+.offer-stripe p:nth-child(2) span{
+    text-decoration: underline;
+    margin-right: 8px;
+    text-underline-offset: 5px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.offer-stripe p:nth-child(3) {
+    font-size: 12px;
+    margin-top: 8px;
+}
+
+.new-arrival {
+    height: 30rem;
+    background-image: url('https://images.puma.com/image/upload/c_scale,f_auto,q_auto:good,w_6000/cms/images/32f16efd520940f1b163cb907f2a58f4fe051313?_a=BAMCkGfi0');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    padding-left: 2rem;
+}
+
+.arrival-wrap {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 20rem;
+    height: 100%;
+}
+
+.arrival-wrap p:first-child {
+    font-size: 35px;
+    font-weight: bold;
+    color: white;
+}
+
+.arrival-wrap p:nth-child(2) {
+    font-size: 20px;
+    color: white;
+}
+
+.new-arrival-right img{
+ height: 100%;
+}
+
+.arrival-btns {
+    margin-top: 1rem;
+}
+
+.arrival-btns button {
+    background-color: white;
+    padding: 0.5rem 1rem;
+    font-weight: 700;
+    margin-right: 5px;
+}
+
+.arrival-btns button:hover {
+    transition: 0.5s all ease;
+    background-color: #DFE0E1;
+}
+
+.arrival-small {
+    display: none;
+}
+
+.arrival-small-img {
+    background-image: url('https://images.puma.com/image/upload/c_scale,f_auto,q_auto:good,w_854/cms/images/02dd5c666a08c62fc22edce3f13b866599d97094?_a=BAMCkGfi0');
+    height: 20rem;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+}
+
+@media screen and (max-width: 800px){
+    .new-arrival {
+        height: 25rem;
+    }
+}
+
+@media screen and (max-width: 600px){
+    .new-arrival {
+        background-image: url('https://images.puma.com/image/upload/c_scale,f_auto,q_auto:good,w_854/cms/images/02dd5c666a08c62fc22edce3f13b866599d97094?_a=BAMCkGfi0');
+        height: 35rem;
+    }
+    .arrival-wrap {
+        display: none;
+    }
+    .arrival-small {
+        display: flex;
+        justify-content: center;
+        height: 100%;
+        margin: 1.5rem 0;
+    }
+    .lowest-price {
+        height: 10rem;
+    }
+    .lowest-price p:first-child {
+        font-size: 24px !important;
+    }
+    .lowest-price p:nth-child(2) {
+        font-size: 18px !important;
+    }
+}
+.arrival-small-wrap {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    align-items: center;
+}
+
+.arrival-small-wrap p:first-child {
+    font-size: 24px;
+    color: black;
+    font-weight: 700;
+}
+
+.arrival-small button {
+    padding: 0.5rem 1rem;
+}
+
+.arrival-small button:hover {
+    background-color: #DFE0E1;
+}
+
+@media screen and (max-width: 500px){
+    .new-arrival {
+        height: 30rem;
+    }
+    .lowest-price {
+        height: 7rem;
+    }
+    .lowest-price p:first-child {
+        font-size: 20px !important;
+    }
+    .lowest-price p:nth-child(2) {
+        font-size: 16px !important;
+    }
+
+    .palermo {
+        margin-bottom: 36rem !important;
+    }
+    .playbook-cont p:first-child {
+        font-size: 25px !important;
+    }
+}
+
+.lowest-price {
+ display: flex;
+ flex-direction: column;
+ justify-content: center;
+ gap: 0.5rem;
+ height: 15rem;
+ align-items: center;
+ /* padding: 5rem 0; */
+ background-image: url('https://images.puma.com/image/upload/c_scale,f_auto,q_auto:good,w_2880/cms/images/f5eaefeafb5a5ff5ca2d77b22f6b7653aed842da?_a=BAMCkGfi0');
+}
+
+.lowest-price p:first-child {
+    font-size: 30px;
+    font-weight: bold;
+    color: white;
+}
+
+.lowest-price p:nth-child(2) {
+    font-size: 24px;
+    color: white;
+}
+
+.lowest-price button {
+    padding: 0.5rem 1rem;
+    background-color: white;
+    font-weight: 700;
+    margin-top: 1.5rem;
+}
+
+.lowest-price button:hover {
+    background-color: #DFE0E1;
+}
+
+.palermo {
+    position: relative;
+    height: 30rem;
+    background-color: #DAD2CC;
+    padding: 2rem 3.5rem;
+    margin-top: 5rem;
+}
+
+.palermo p:first-child {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.palermo p:nth-child(2) {
+    font-size: 24px;
+    margin-bottom: 1.5rem;
+}
+
+.palermo-img {
+    position: absolute;
+    top: -2rem;
+    right: 3.5rem;
+    width: 50%;
+}
+
+.palermo-img img {
+    width: 100%;
+}
+
+.palermo-video {
+    position: absolute;
+    bottom: -4rem;
+    left: 3.5rem;
+    width: 45%
+    
+}
+
+.palermo-video video {
+    width: 100%;
+}
+
+.palermo button {
+    padding: 0.5rem 1rem;
+    color: white;
+    font-weight: bold;
+    background-color: black;
+}
+
+.palermo button:hover {
+    background-color: #DAD2CC;
+}
+
+@media screen and (max-width: 947px) {
+    .palermo {
+        padding: 2rem 1.5rem 
+    }
+    .palermo-video {
+        left: 6.5rem;
+    }
+    .palermo-img {
+        width: 40%;
+        height: 100%;
+    }
+    .palermo-img img {
+        height: 120%;
+        object-fit: cover;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .palermo {
+        display: flex;
+        flex-direction: column;
+        gap: 2.8rem;
+        background-color: white;
+        margin-top: 0; 
+        margin-bottom: 45rem;
+    }
+    .palermo-wrap {
+        display: flex;
+        flex-direction: column-reverse;
+        gap: 8rem;
+    }
+    .palermo-img {
+        position: static;
+        width: 100%;
+    }
+    .palermo-video {
+        position: static;
+        width: 100%;
+    }
+    .palermo-cont {
+        display: flex;
+        flex-direction: column;
+        align-items: center ;
+    }
+    .palermo-cont p:first-child {
+        font-size: 24px;
+    }
+    .palermo-cont p:nth-child(2) {
+        font-size: 18px;
+    }
+    .palermo-cont button {
+        font-size: 13px;
+        padding: 0.5rem;
+    }
+}
+
+.playbook-cont {
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+ gap: 0.5rem;
+ margin-top: 13rem;
+}
+
+.playbook-cont p:first-child {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.playbook-cont p:nth-child(2) {
+    color: gray;
+}
+
+.playbook-card img {
+    width: 18rem;
+    height: 20rem;
+    object-fit: cover;
+}
+
+.playbook-cards {
+    display: flex;
+    justify-content: space-around;
+    gap: 1rem;
+    overflow-x: auto;
+    margin-top: 2rem;
+    width: 100%;
+    white-space: nowrap;
+    padding: 0 1rem;
+}
+
+.playbook-cards.playbook-cards::-webkit-scrollbar-thumb {
+    background-color: #505050;
+    border-radius: 10px;
+    width: 10px;
+}
+
+.playbook-cards.playbook-cards::-webkit-scrollbar-track {
+    background-color: #DAD2CC;
+    border-radius: 10px;
+}
+
+.playbook-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 1.5rem;
+    align-items: center;
+    cursor: pointer;
+}
+
+.playbook-card p {
+ font-weight: bold;
+}
+
+.playbook-card button {
+    transition: 0.5s all ease;
+    padding: 0.5rem;
+    color: white;
+    font-weight: bold;
+    background-color: black;
+}
+
+.playbook-card button:hover {
+    background-color: #DAD2CC;
+}
+
+.collections {
+    margin-top: 2.5rem;
+}
+
+.fenty {
+    background-image: url('https://images.puma.com/image/upload/c_scale,f_auto,q_auto:good,w_6000/cms/images/c7e563093ce8968cf56a0dbabc3aed8e6003eec0?_a=BAMAH2fi0');
+    background-position: center;
+    background-size: cover;
+    height: 24rem;
+    display: flex;
+    align-items: center;
+    padding-left: 2.5rem;
+}
+
+.fenty-small {
+    display: none;
+}
+
+.fenty-cont p:first-child {
+    font-size: 24px;
+    font-weight: bold;
+    color: white;
+}
+
+.fenty-cont p:nth-child(2) {
+    font-size: 20px;
+    color: white;
+    margin-bottom: 1rem;
+}
+
+.fenty-cont button {
+    padding: 0.5rem  1rem;
+    background-color: white;
+    font-weight: 600;
+}
+
+.fenty-cont button:hover {
+    transition: all 0.8s ease;
+    background-color: #DAD2CC;
+}
+
+@media screen and (max-width: 768px){
+    .fenty {
+        height: 10rem;
+    }
+    .fenty-cont p:first-child {
+        font-size: 20px;
+    }
+    .fenty-cont p:nth-child(2) {
+        font-size: 16px;
+    }
+    .fenty-cont button {
+        padding: 0.5rem;
+        font-size: 14px;
+    }
+}
+
+.fenty-small p:first-child {
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.fenty-small p:nth-child(2) {
+    font-size: 14px;
+    margin: 0.5rem 0;
+}
+
+.fenty-small button {
+    background-color: black;
+    padding: 0.5rem;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.asaprocky {
+    background-image: url('https://images.puma.com/image/upload/c_scale,f_auto,q_auto:good,w_6000/cms/images/a2d888ff2d01d208b66a4af9fe8edfde53b1e119?_a=BAMCkGfi0');
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 2rem;
+    margin-top: 2rem;
+}
+@media screen and (max-width: 500px) {
+ .fenty-small {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 1.5rem 0;
+ }
+ .fenty-cont {
+    display: none;
+ }
+ .fenty-small button {
+    background-color: white;
+    color: black;
+ }
+ .fenty-small button:hover { 
+    background-color:#DAD2CC;
+ }
+}
+
+.collections2 {
+    display: flex;
+    justify-content: space-around;
+    gap: 1rem;
+    white-space: nowrap;
+    overflow-x: auto;
+    margin: 1.5rem 0;
+}
+
+.collections2 .collect-card {
+    height: 18rem;
+    width: 25rem;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    flex-direction: column;
+    padding-bottom: 1rem;
+    color: white;
+    font-weight: 700;
+    padding: 0 1.5rem;
+}
+
+.collections2 .collectone {
+    background-image: url('https://images.puma.com/image/upload/c_scale,f_auto,q_auto:good,w_1000/cms/images/71ce7729f8f7da8c0cfc20e78b9839d4d8257a84?_a=BAMAH2fi0');
+    background-size: cover;
+    background-position: center;
+}
+
+.collections2 .collecttwo {
+    background-image: url('https://images.puma.com/image/upload/c_scale,f_auto,q_auto:good,w_854/cms/images/c3a9a7cca38afda7c4bbadf678c3afe427b810eb?_a=BAMAGSfi0');
+    background-size: cover;
+    background-position: center;
+}
+
+.collections2 .collectthree {
+    background-image: url('https://images.puma.com/image/upload/c_scale,f_auto,q_auto:good,w_2083/cms/images/73e7d6229af3b731a2b96be73b85a7542c4e8a0f?_a=BAMCkGfi0');
+    background-size: cover;
+    background-position: center;
+}
+
+.collections2 .collectfour {
+    background-image: url('https://images.puma.com/image/upload/c_scale,f_auto,q_auto:good,w_1000/cms/images/523938f36eac15a14d2e66cdb263176adf2ab6ac?_a=BAMCkGfi0');
+    background-size: cover;
+    background-position: center;
+}
+
+.highlights {
+    margin-top: 4rem;
+}
+
+.highlights p:first-child {
+    text-align: center;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.puma-one {
+    margin-top: 2.3rem;
+}
+
+.puma-one .fenty {
+    background-image: url('https://images.puma.com/image/upload/c_scale,f_auto,q_auto:good,w_6000/cms/images/953b99043fc3ec28d0f78a56167e739a51d6afc8?_a=BAMCkGfi0');
+}
+
+@media screen and (max-width: 500px){
+    .puma-one .fenty {
+        background-image: url('https://images.puma.com/image/upload/c_scale,f_auto,q_auto:good,w_854/cms/images/31cc89aeccf9e69432daa2aecd2b5c936256bc7a?_a=BAMCkGfi0') !important;
+        background-position: center;
+        background-size: cover;
+        height: 29rem;
+    }
+    .mmq .fenty {
+        background-image: url('https://images.puma.com/image/upload/c_scale,f_auto,q_auto:good,w_854/cms/images/769e0db1908f7092309d9a9251a70511eb9ccbb4?_a=BAMCkGfi0') !important;
+        background-position: center;
+        background-size: cover;
+        height: 29rem;
+    }
+}
+
+.new-season {
+    margin-top: 2rem;
+}
+
+.seasonhead {
+    text-align: center;
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 2rem;
+}
+
+.season-cards {
+    display: flex;
+    justify-content: space-around;
+    white-space: nowrap;
+    gap: 1rem;
+    overflow-x: auto;
+    padding: 0 1.5rem;
+}
+
+.season-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    width: 25rem;
+    padding: 0 2rem;
+    font-size: 18px;
+    color: wheat;
+    font-weight: 600;
+}
+
+.season1 {
+    background-image: url('https://images.puma.com/image/upload/c_scale,f_auto,q_auto:good,w_2083/cms/images/55fa220918d3bdc7d4b7d948d8630c0bba97b852?_a=BAMCkGfi0');
+    background-size: cover;
+    height: 16rem;
+}
+
+.season2 {
+    background-image: url('https://images.puma.com/image/upload/c_scale,f_auto,q_auto:good,w_2083/cms/images/1a8aab4395a2f8b7fccf58ff6d1602f12b8622a6?_a=BAMCkGfi0');
+    background-size: cover;
+    height: 16rem;
+}
+.season3 {
+    background-image: url('https://images.puma.com/image/upload/c_scale,f_auto,q_auto:good,w_626/cms/images/423ce1c3734ef6f658e01d41e2771492ebd5661e?_a=BAMCkGfi0');
+    background-size: cover;
+    height: 16rem;
+}
+.season4 {
+    background-image: url('https://images.puma.com/image/upload/c_scale,f_auto,q_auto:good,w_1000/cms/images/c2f5a7d0b5024fb87187dc23084a91bd7cd6ad04?_a=BAMAGSfi0');
+    background-size: cover;
+    height: 16rem;
+}
+
+.mmq {
+    margin-top: 2rem;
+}
+
+.mmq .fenty  {
+    display: flex;
+    justify-content: center;
+    background-image: url('https://images.puma.com/image/upload/c_scale,f_auto,q_auto:good,w_6000/cms/images/21e926883273ea2f81973344ac8fdd4174716bd5?_a=BAMCkGfi0');
+}
+
+.mmq .fenty .fenty-cont {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.recommended {
+    margin-top: 2rem;
+}
+
+.recommendedhead {
+    text-align: center;
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 1.5rem;
+}
+
+.recommend-cards {
+    display: flex;
+    justify-content: space-around;
+    gap: 1rem;
+    white-space: nowrap;
+    padding: 0 1rem;
+    overflow-x: auto;
+}
+
+.recommend-card {
+    position: relative;
+    padding: auto;
+}
+
+.recommend-card img {
+    width: 18rem;
+    height: 20rem;
+}
+
+.recomhead {
+    font-size: 14px;
+    font-weight: bold;
+    margin: 1rem 0;
+}
+
+.price {
+    color: #BA2B20;
+}
+
+.recommend-card .discount {
+    position: absolute;
+    top: 0;
+    background-color: #BA2B20;
+    color: white;
+    padding: 0.5rem;
+    font-size: 14px;
+}
+
+.pricecut {
+    color: gray;
+    text-decoration: line-through;
+    margin-top: 5px;
+}
+
+footer {
+    background-color: black;
+    margin-top: 4rem;
+    padding-top: 1rem;
+}
+
+footer h3 {
+    color: white;
+    margin-bottom: 10px;
+}
+
+.foot-list p {
+    color: gray;
+    margin-bottom: 2px;
+    cursor: pointer;
+}
+
+.footer-large {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 2rem;
+    padding: 0 1rem;
+}
+
+.footer-large .start p {
+    color: white;
+    font-size: 12px;
+}
+
+.footer-large .start img {
+    width: 50px;
+}
+
+.foot-links {
+    color: white;
+    margin: 2rem 0;
+    display: flex;
+    gap: 4rem;
+    font-size: 20px;
+}
+
+.explore {
+    margin-top: 1rem;
+}
+
+.exp-wrap {
+    display: flex;
+    gap: 1rem;
+    margin-top: 2rem;
+}
+
+.explore .exp {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 70px;
+    border: 1px solid rgba(128, 128, 128, 0.705);
+    border-radius: 10px;
+}
+
+.foot-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 1rem;
+}
+
+.divider {
+    height: 1px;
+    background-color: gray;
+    width: 94%;
+    margin: 2rem auto;
+    margin-bottom: 0.5rem;
+}
+
+.india {
+    display: flex;
+    align-items: center;
+    border: 1px solid gray;
+    padding: 0rem 2rem 0rem 0.5rem;
+}
+
+.india p {
+    color: white;
+}
+
+.foot-bottom .india img {
+    width: 50px;
+    height: 50px;
+}
+
+.copyright {
+    color: #DAD2CC;
+    font-size: 14px;
+    margin-top: 2rem;
+}
+
+.imp {
+    text-align: right;
+    margin-top: 5px;
+    text-decoration: underline;
+}
+
+.india-small {
+    display: none;
+}
+
+.footer-small {
+    display: none;
+    color: white;
+    padding: 0 1rem;
+}
+
+.footer-small .fsm-item  {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    padding: 0.8rem 0.5rem;
+}
+
+.footer-small .fsm-item:hover  {
+    transform: 0.8s all ease;
+    background-color: #3B4047;
+}
+
+.india-small img {
+    width: 50px;
+    height: 50px;
+}
+
+.india-small p {
+    color: white;
+}
+
+@media screen and (max-width: 900px){
+    .footer-small {
+        display: flex;
+        flex-direction: column;
+        gap: 0.2rem;
+    }
+    .india-small {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: 1px solid gray;
+        gap: 0.5rem;
+        width: 95%;
+        margin: 0 auto;
+        cursor: pointer;
+    }
+    .india {
+        display: none;
+    }
+    .footer-large {
+        display: none;
+    }
+    .foot-bottom {
+        justify-content: flex-end;
+    }
+}
