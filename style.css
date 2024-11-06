@@ -11,6 +11,7 @@ body {
 .offer  {
     background-color: white !important;
     color: black !important;
+    text-align: center !important;
 }
 
 nav {
@@ -675,6 +676,9 @@ nav .nav-wrap .nav-search:hover {
         background-position: center;
         background-size: cover;
         height: 29rem;
+    }
+    .mmq .fenty-cont {
+        display: none !important;
     }
 }
 
